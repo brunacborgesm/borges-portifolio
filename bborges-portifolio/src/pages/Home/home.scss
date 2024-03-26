@@ -1,0 +1,89 @@
+@import './src/App.scss';
+
+.container {
+    display: grid;
+    place-items: center;
+    padding: 10% 0;
+}
+
+.primary-title,
+.secondary-title {
+    background-image: $gradient-color;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+.primary-title {
+    font-size: 4rem;
+}
+
+.secondary-title {
+    font-size: 2rem;
+}
+
+.container p {
+    color: $default-text-color;
+    padding: 0px 0 20px 0;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 15px;
+}
+
+.buttons-container a.button-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(106, 40, 153);
+}
+
+.buttons-container a.button-link > *:first-child {
+  margin-right: 5px;
+}
+
+/* ------ MEDIA QUERIES ------ */
+
+/* cellphones and tablets */
+@media screen and (max-width: 768px) {
+    
+    .container {
+        padding: 20% 15px;
+    }
+
+    .container p {
+        text-align: center;
+        padding: 0 10px 10px 10px;
+    }
+
+    .primary-title {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .secondary-title {
+        font-size: 1.8rem;
+    }
+
+    .buttons-container {
+        display: grid;
+        gap: 10px;
+        place-items: center;
+    }
+}
+
+/* (desktops) */
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .primary-title {
+        font-size: 4rem;
+    }
+    .secondary-title {
+        font-size: 2rem;
+    }
+}

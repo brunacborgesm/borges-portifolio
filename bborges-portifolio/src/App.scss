@@ -1,0 +1,14 @@
+/* ------ GLOBAL VARIABLES ------ */
+
+$gradient-color: linear-gradient(90deg, rgb(106, 40, 153) 0%, rgb(135, 133, 133) 100%);
+$default-text-color:  rgb(211, 211, 211);
+$default-font-poppins: "Poppins", sans-serif;
+
+/* ------------------------------ */
+
+html, body {
+  font-family: $default-font-poppins;
+  margin: 0;
+  padding: 0;
+  background-color: #1b1818;
+}
