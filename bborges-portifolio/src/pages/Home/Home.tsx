@@ -6,9 +6,11 @@ import EmailIcon from '@mui/icons-material/Email';
 export const Home = () => {
   return (
     <div className='container'>
-      <h1 className="primary-title">
-        Portifólio em construção
-      </h1>
+      <div className="text-container">
+        <h1 className="primary-title">
+          Portifólio em construção
+        </h1>
+      </div>
       <h2 className="secondary-title">
         Uma redefinição de design
       </h2>
