@@ -1,10 +1,16 @@
 import './App.scss'
-import { Home } from './pages/Home/Home'
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Header } from './components/Header/Header.tsx';
+import { AppRoutes } from './routes/AppRoutes.tsx';
 
-export const App = () => {
+export const App: React.FC = () => {
   return (
-    <div>
-      <Home />
-    </div>
-  )
+    <Router>
+      <div className="App">
+        <Header />
+        <AppRoutes />
+      </div>
+    </Router>
+  );
 }
