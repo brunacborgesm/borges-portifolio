@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Home } from '../pages/Home/Home';
+import { Error } from '../pages/Error404/Error';
 //import About from '../pages/About';
 //import Portfolio from '../pages/Portfolio';
 //import Contact from '../pages/Contact';
-//import NotFound from '../pages/NotFound';
 
 export const AppRoutes: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ export const AppRoutes: React.FC = () => {
       {/*<Route path="/about" element={<About />} /> */}
       {/*<Route path="/portfolio" element={<Portfolio />} /> */}
       {/*<Route path="/contact" element={<Contact />} /> */}
-      {/*<Route path="*" element={<NotFound />} /> */}
+      <Route path="*" element={<Error />} />
     </Routes>
   );
 }
